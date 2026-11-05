@@ -1,90 +1,97 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,800");
 body {
-body, html {
-    font-family: 'Open Sans', sans-serif;
+  body,
+  html {
+    font-family: "Open Sans", sans-serif;
     padding: 0;
     margin: 0;
-}
+  }
 
-h1 {
+  h1 {
     font-weight: 800;
     font-size: 50px;
-}
+  }
 
-h3 {
+  h3 {
     font-weight: bold;
     font-size: 30px;
-}
+  }
 
-h4 {
+  h4 {
     font-weight: bold;
     font-size: 20px;
-}
+  }
 
-.wrapper {
+  p {
+    font-weight: bold;
+    font-size: 30px;
+    margin: 30px 0;
+  }
+
+  .wrapper {
     width: 960px;
     margin: 0 auto;
-}
+  }
 
-.hero-banner {
-    background-color: #007FFF;
+  .hero-banner {
+    background-color: #007fff;
     height: 100vh;
     padding: 50px 20px;
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
-}
+  }
 
-.hero-banner h1 {
+  .hero-banner h1 {
     color: white;
     margin: 14px 0 20px;
-}
+  }
 
-.hero-banner h3 {
+  .hero-banner h3 {
     color: white;
     margin: 0 0 35px;
-}
+  }
 
-.hero-banner h4,
-.hero-banner h4 a {
+  .hero-banner h4,
+  .hero-banner h4 a {
     color: white;
     margin: 0;
-}
-@media screen and (max-width: 768px) {
+  }
+  @media screen and (max-width: 768px) {
     .wrapper {
-        width: 100%;
+      width: 100%;
     }
 
     .hero-banner {
-        min-height: 100vh;
-        height: auto;
-        padding: 30px 20px;
+      min-height: 100vh;
+      height: auto;
+      padding: 30px 20px;
     }
 
     .hero-banner h1 {
-        font-size: 36px;
+      font-size: 36px;
     }
 
     .hero-banner h3 {
-        font-size: 18px;
+      font-size: 18px;
     }
 
     .character1,
     .character2,
     .character3 {
-        position: relative;
-        display: inline-block;
-        right: auto;
-        top: auto;
-        bottom: auto;
-        max-width: 100%;
-        height: auto;
-        background-size: contain;
+      position: relative;
+      display: inline-block;
+      right: auto;
+      top: auto;
+      bottom: auto;
+      max-width: 100%;
+      height: auto;
+      background-size: contain;
     }
-}
-.character1 {
+  }
+  .character1 {
     background: url(img/EricCartman.png) no-repeat 0 0;
-   background-size: 100%;
+    background-size: 100%;
     width: 363px;
     height: 344px;
     position: absolute;
@@ -92,9 +99,9 @@ h4 {
     right: 5%;
     transform: rotate(15deg);
     z-index: 1;
-}
+  }
 
-.character2 {
+  .character2 {
     background: url(img/KennyMcCormick.png) no-repeat 0 0;
     background-size: 100%;
     width: 309px;
@@ -103,51 +110,107 @@ h4 {
     top: 210px;
     right: 22%;
     z-index: 1;
-}
+  }
 
-.character3 {
+  .character3 {
     background: url(img/KyleBroflovski.png) no-repeat 0 0;
-     background-size: 100%;
+    background-size: 100%;
     width: 297px;
     height: 286px;
     position: absolute;
     bottom: 50px;
     right: 5%;
     z-index: 1;
-}
-    a.cta,
-button.cta {
+  }
+  a.cta,
+  button.cta {
     font-size: 30px;
     font-weight: bold;
     color: white;
-    background: #007FFF;
+    background: #007fff;
     display: inline-block;
-    box-shadow: 0 0 0 10px rgba(0,127,255,.15);
+    box-shadow: 0 0 0 10px rgba(0, 127, 255, 0.15);
     padding: 20px 30px;
     border-radius: 10px;
     text-decoration: none;
-}
+  }
 
-a.cta.alt,
-button.cta.alt {
-    background-color: #FFD400;
+  a.cta.alt,
+  button.cta.alt {
+    background-color: #ffd400;
     color: #111111;
-    box-shadow: 0 0 0 10px rgba(0,0,0,.15);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.15);
+  }
+  nav {
+    height: 100px;
+    background-color: white;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+  }
+
+  nav .logo {
+    display: block;
+    width: 300px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -20px;
+    margin-left: 30px;
+    background: url(img/South_Park.png) no-repeat 0 0;
+    background-size: 100%;
+    overflow: hidden;
+    text-indent: -999px;
+  }
 }
 
+nav ul li {
+  margin: 0;
+  padding: 0;
+  display: block;
+  float: right;
+}
+
+nav ul li a {
+  display: block;
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #111111;
+  text-decoration: none;
+  padding: 30px 10px;
+  line-height: 30px;
+}
+.more-info {
+  text-align: center;
+}
+
+.more-info p {
+  margin: 18px 0 35px;
+}
+
+.more-info h2 {
+  margin: 50px 0 0px;
+}
+
+.highlight {
+  background-color: #ffadf9;
+  color: #ff3300;
+  padding: 5px 10px;
+  line-height: 50px;
+  display: inline;
+  font-weight: 800;
+}
 /*
-<div class="hero-banner">
-    <div class="wrapper">
-        <h4>Rich from <a href="https://taptapkaboom.com">Tap Tap Kaboom</a> presents</h4>
-        <h1>The Silliest &amp;<br/>
-            Most Foul-Mouthed Gang<br/>
-            In The World!</h1>
-        <h3>It's Eric Cartman, Stanley Marsh, Kenneth McCormick &amp; Kyle Broflovski.<br/>
-            They're the best of friends.</h3>
-        <a class="cta alt" href="#more-info">Read More</a>
-    </div>
-    <div class="character1"></div>
-    <div class="character2"></div>
-    <div class="character3"></div>
+/*
+<div class="more-info" id="more-info">
+    <h2>Join Our Fan Club</h2>
+    <p>Every week we have <span class="highlight">a party.</span> If you want to
+    join us then join our fan club. Members will also receive pictures of us in all
+    kinds of shapes and sizes. Cool huh?</p>
+    <button class="cta">Sign Me Up!</button>
 </div>
 */
